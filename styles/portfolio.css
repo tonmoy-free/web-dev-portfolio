@@ -39,6 +39,10 @@
     color: rgb(117, 117, 117);
 }
 
+.text-center{
+    text-align: center;
+}
+
 /* Header */
 .header{
     background-image: url(../images/developer.png), url(../images/header_bg.png);
