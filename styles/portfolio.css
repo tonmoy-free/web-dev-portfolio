@@ -199,6 +199,11 @@ footer textarea {
     border: none;
 }
 
+.footer-bottom {
+    text-align: center;
+    color: rgb(117, 117, 117);
+}
+
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
