@@ -7,9 +7,10 @@
 }
 
 /* Shared Style */
-.secondary-bg{
+.secondary-bg {
     background-color: rgb(255, 248, 243);
 }
+
 .text-primary {
     color: rgb(253, 110, 10);
 }
@@ -28,23 +29,23 @@
     border-radius: 5px;
 }
 
-.section-title{
+.section-title {
     font-size: 35px;
     font-weight: bold;
     color: rgb(24, 24, 24);
 }
 
-.section-discription{
+.section-discription {
     font-size: 18px;
     color: rgb(117, 117, 117);
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
 /* Header */
-.header{
+.header {
     background-image: url(../images/developer.png), url(../images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
@@ -79,15 +80,16 @@ nav li a {
 }
 
 /* banner styles */
-.banner{
-display: flex;
-justify-content: space-between;
-margin: 0 35px 0 230px;
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 230px;
 }
 
-.banner-content{
+.banner-content {
     max-width: 580px;
 }
+
 .banner-grettings {
     font-size: 45px;
     font-weight: 600;
@@ -98,12 +100,12 @@ margin: 0 35px 0 230px;
     font-size: 85px;
 }
 
-.banner-profile-pic{
+.banner-profile-pic {
     width: 580px;
 }
 
 /* main styles */
-main{
+main {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -117,17 +119,19 @@ main section {
 .about {
     border-radius: 10px;
 }
-.about{
+
+.about {
     padding: 130px 150px;
     text-align: center;
     margin-top: 130px;
 }
 
-.about-items{
+.about-items {
     display: flex;
     justify-content: space-around;
 }
-.item-description{
+
+.item-description {
     font-weight: 600;
 }
 
@@ -149,14 +153,20 @@ main section {
     gap: 24px;
 }
 
-.experience-sub-title{
+.experience-sub-title {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
 }
-.experience-description , .experience-sub-title ,.section-discription,.item-title {
+
+.experience-description,
+.experience-sub-title,
+.section-discription,
+.item-title {
     color: rgb(117, 117, 117);
-}.resume hr{
+}
+
+.resume hr {
     margin: 30px 5px;
 }
 
@@ -171,11 +181,13 @@ footer {
     gap: 100px;
 }
 
-.footer-column{
+.footer-column {
     width: 50%;
 }
 
-footer input[type="text"], footer input[type="email"],footer textarea{
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
 
     height: 64px;
     border-radius: 5px;
@@ -190,14 +202,26 @@ footer input[type="text"], footer input[type="email"],footer textarea{
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
-    .skills-container,.resume-container,footer {
+
+    .hide {
+        display: none;
+    }
+
+    .skills-container,
+    .resume-container,
+    footer,
+    .about-items {
         flex-direction: column;
     }
-    footer{
+
+    footer,.about{
         padding: 20px;
     }
     .footer-column{
         width: 100%;
     }
-    
+    footer input[type="text"], footer input[type="email"],footer textarea{
+        width: calc(100% - 40px);
+    }
+
 }
