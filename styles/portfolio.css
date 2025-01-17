@@ -177,7 +177,9 @@ main section {
 /* footer style */
 footer {
     padding: 130px 230px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: flex; */
     gap: 100px;
 }
 
@@ -208,10 +210,6 @@ footer textarea {
 
 @media screen and (max-width: 576px) {
 
-    .hide {
-        display: none;
-    }
-
     .skills-container,
     .resume-container,
     footer,
@@ -241,6 +239,9 @@ footer textarea {
     .header {
         background-image: none;
     }
+    footer{
+        grid-template-columns: 1fr;
+    }
 
     footer,.about{
         padding: 20px;
@@ -252,4 +253,11 @@ footer textarea {
         width: calc(100% - 40px);
     }
 
+}
+
+/* tablet specific media query */
+@media screen and (max-width: 576px) and (max-width: 990px){
+    .banner{
+        flex-direction: column;
+    }
 }
