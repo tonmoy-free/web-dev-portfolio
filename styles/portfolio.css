@@ -61,7 +61,7 @@ nav {
 
 .nav-title {
     font-weight: 800;
-    font-size: 45px;
+    font-size: 2.81rem; /* 45px */
 }
 
 nav ul {
@@ -91,13 +91,13 @@ nav li a {
 }
 
 .banner-grettings {
-    font-size: 45px;
+    font-size: 2.81rem; /* 45px */
     font-weight: 600;
 }
 
 .banner-title {
     font-weight: bold;
-    font-size: 85px;
+    font-size: 5.31rem; /* 85px */
 }
 
 .banner-profile-pic {
@@ -230,6 +230,13 @@ footer textarea {
 
     .banner{
         margin: 20px;
+    }
+
+    .banner-title{
+        font-size: 3.2rem;
+    }
+    .banner-content{
+        text-align: center;
     }
 
     .banner-profile-pic{
